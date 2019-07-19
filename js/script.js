@@ -65,7 +65,7 @@ let myChart2 = document.getElementById('myChart2').getContext('2d');
 let massPopChart2 = new Chart(myChart2, {
     type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
     data:{
-        labels:['Item1', 'Item2', 'Item3', ,'Item5','Item5','Item7'],
+        labels:['Item 1', 'Item 2', 'Item 3', 'Item 5','Item 5','Item 7','Item 8','Item 9','Item 10'],
         datasets:[{
             label:'Stocks',
             data:[

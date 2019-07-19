@@ -39,7 +39,7 @@
             <a href="dashbord.php" class="list-group-item list-group-item-action bg-light">Dashboard</a>
             <a href="customer.php" class="list-group-item list-group-item-action bg-light">Customer</a>
             <a href="item.php" class="list-group-item list-group-item-action bg-light">Item</a>
-            <a href="order.php" class="list-group-item list-group-item-action bg-light">Order</a>
+            <a href="placeOrder.php" class="list-group-item list-group-item-action bg-light">Order</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
             <a href="#" class="list-group-item list-group-item-action bg-light">Logout</a>
         </div>
@@ -201,7 +201,7 @@
 
 
 
-                        <img class="disabled medium ui image" src="../images/table.gif " style="width:auto ">
+                        <img class="disabled medium ui image" src="../images/table.gif " style="width:545px ">
 
 
                     </div>

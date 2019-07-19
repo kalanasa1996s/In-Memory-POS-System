@@ -21,6 +21,8 @@ var customers = [
     "C006",
     "C007",
     "C008",
+    "C009",
+    "C010",
 ];
 $(document).ready(function () {
     for (var i = 0; i < items.length; i++) {

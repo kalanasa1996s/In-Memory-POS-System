@@ -87,9 +87,9 @@
         <div class="container-fluid">
 
             <div class="m_content">
-                <div class="card-header">
-                    <h3>Place Order</h3>
-                </div>
+<!--                <div class="card-header">-->
+<!--                    <h3>Place Order</h3>-->
+<!--                </div>-->
                 <div class="m_card">
                     <form id="order_form">
                         <div class="form-row">
@@ -130,7 +130,8 @@
                                 <input id="qty" type="text" class="form-control" placeholder="Qty">
                             </div>
                             <div class="form-group col-12">
-                                <button id="addToCart" class="btn btn-success float-right" type="button">Add To Cart</button>
+
+                                <button type="button" class="btn btn-primary" id="addToCart"> Add To Cart</button>
                             </div>
                         </div>
                         <table class="table table-hover">

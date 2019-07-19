@@ -30,8 +30,6 @@
     <link rel="stylesheet" href="../fontawesome-free-5.8.2-web/css/all.css">
 
 
-
-
 </head>
 <body>
 
@@ -90,39 +88,39 @@
         <!--//////////////////////////////////////////////////////body 01//////////////////////////////////////////////////////////////-->
 
         <div class="container-fluid">
-            <h1 class="mt-4">Item</h1>
-
 
 
             <div class="m_content">
-                <div class="card-header">
-                    <h3>Items Manager</h3>
-                </div>
+
                 <div class="m_card">
                     <form>
 
-                        <div class="form-group">
-                            <label>Item Code</label>
-                            <input type="text" class="form-control" placeholder="ItemCode">
-                        </div>
-                        <div class="form-group">
-                            <label>Item Name</label>
-                            <input type="text" class="form-control" placeholder="ItemName">
-                        </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label>Unit Price</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="UnitPrice"
-                                           aria-label="Dollar amount (with dot and two decimal places)">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text">$</span>
-                                    </div>
-                                </div>
+                                <label>Item ID</label>
+                                <input id="custID" type="text" class="form-control" placeholder="Item ID">
                             </div>
                             <div class="form-group col-md-6">
-                                <label>Quantity</label>
-                                <input type="text" name="qty" class="form-control" placeholder="Qty">
+                                <label>Item Name</label>
+                                <input id="name" type="text" class="form-control" placeholder="Item Name">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>QTY</label>
+                                <input id="custID" type="text" class="form-control" placeholder="QTY">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Cost Price</label>
+                                <input id="name" type="text" class="form-control" placeholder="Cost Price">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Selling Price</label>
+                                <input type="text" class="form-control" placeholder="Selling Price">
                             </div>
                         </div>
 
@@ -130,13 +128,12 @@
                         <button id="add" type="button" onclick="addRow()" class="btn btn-primary">ADD</button>
                         <button id="update" onclick="updateRow()" type="button" class="btn btn-success">UPDATE</button>
                         <button id="cancel" type="button" class="btn btn-secondary">CANCEL</button>
-                        <button id="delete" onclick="deleteRow(row)" type="button" class="btn btn-danger">DELETE</button>
+                        <button id="delete" onclick="deleteRow(row)" type="button" class="btn btn-danger">DELETE
+                        </button>
                     </form>
                 </div>
 
-                <div class="card-header">
-                    <h3>View Items</h3>
-                </div>
+
                 <div class="m_card">
                     <form action="">
                         <div class="form-row">
@@ -145,18 +142,36 @@
                     <table class="table table-hover">
                         <thead class="thead-dark">
                         <tr>
-                            <th scope="col">ItemCode</th>
-                            <th scope="col">ItemName</th>
-                            <th scope="col">UnitPrice</th>
-                            <th scope="col">Qty</th>
+                            <th scope="col">Item ID</th>
+                            <th scope="col">Item Name</th>
+                            <th scope="col">QTY</th>
+                            <th scope="col">Cost Price</th>
+                            <th scope="col">Selling Price</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
+                            <td>I001</td>
+                            <td>Lux</td>
+                            <td>1000</td>
+                            <td>23.50</td>
+                            <td>50.50</td>
+                        </tr>
+
+                        <tr>
+                            <td>I002</td>
+                            <td>Sunlight</td>
+                            <td>1000</td>
+                            <td>24.50</td>
+                            <td>55.50</td>
+                        </tr>
+
+                        <tr>
+                            <td>I004</td>
+                            <td>Lux</td>
+                            <td>1000</td>
+                            <td>23.50</td>
+                            <td>60.50</td>
                         </tr>
                         </tbody>
                     </table>

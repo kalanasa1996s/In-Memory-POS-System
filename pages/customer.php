@@ -31,6 +31,7 @@
     <script src="../js/jquery-3.4.1.min.js"></script>
 
 
+
 </head>
 <body>
 
@@ -92,29 +93,36 @@
             <!--            <h1 class="mt-4">Customer</h1>-->
 
             <div class="m_content">
-                <div class="card-header">
-                    <h3>Customer Manager</h3>
-                </div>
+
                 <div class="m_card">
                     <form>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label>Customer ID</label>
-                                <input id="custID" type="text" class="form-control" placeholder="ID">
+                                <label>First Name</label>
+                                <input id="custID" type="text" class="form-control" placeholder="First Name">
                             </div>
                             <div class="form-group col-md-6">
-                                <label>Name</label>
-                                <input id="name" type="text" class="form-control" placeholder="Name">
+                                <label>Last Name</label>
+                                <input id="name" type="text" class="form-control" placeholder="Last Name">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label>Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
+
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label>E-mail</label>
-                                <input id="email" type="email" class="form-control" placeholder="E-mail">
+                                <label>Nic</label>
+                                <input id="custID" type="text" class="form-control" placeholder="Nic">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Address</label>
+                                <input id="name" type="text" class="form-control" placeholder="Address">
+                            </div>
+                        </div>
+
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Customer ID</label>
+                                <input id="email" type="email" class="form-control" placeholder="Customer ID">
                             </div>
                             <div class="form-group col-md-6">
                                 <label>PhoneNumber.</label>
@@ -130,34 +138,54 @@
                     </form>
                 </div>
 
-                <div class="card-header">
-                    <h3>Customers</h3>
-                </div>
+<!--                <div class="card-header">-->
+<!--                    <h3>Customers</h3>-->
+<!--                </div>-->
                 <div class="m_card">
                     <form action="">
                         <div class="form-row">
-                            <div class="form-group col-3 float-left">
-                                <input type="search" class="form-control" name="" id="" placeholder="Search by Name/ID">
-                            </div>
+<!--                            <div class="form-group col-3 float-left">-->
+<!--                                <input type="search" class="form-control" name="" id="" placeholder="Search by Name/ID">-->
+<!--                            </div>-->
                         </div>
                     </form>
                     <table id="tbl" class="table table-hover">
                         <thead class="thead-dark">
                         <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Name</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Nic</th>
                             <th scope="col">Address</th>
-                            <th scope="col">E-mail</th>
-                            <th scope="col">Tel</th>
+                            <th scope="col">Customer ID</th>
+                            <th scope="col">PhoneNumber</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr onclick="displayRow(this)">
-                            <td>C001</td>
                             <td>Kalana</td>
+                            <td>Sasanka</td>
+                            <td>961350727V</td>
                             <td>Galle</td>
-                            <td>Kalanasa1996@gmail.com</td>
-                            <td>0771865498</td>
+                            <td>C001</td>
+                            <td>0774570747</td>
+                        </tr>
+
+                        <tr onclick="displayRow(this)">
+                            <td>Kavindu</td>
+                            <td>Dhananjaya</td>
+                            <td>961350727V</td>
+                            <td>Galle</td>
+                            <td>C002</td>
+                            <td>0774570747</td>
+                        </tr>
+
+                        <tr onclick="displayRow(this)">
+                            <td>Diluni</td>
+                            <td>Malsha</td>
+                            <td>961350727V</td>
+                            <td>Galle</td>
+                            <td>C003</td>
+                            <td>0774570747</td>
                         </tr>
                         </tbody>
                     </table>
@@ -188,6 +216,7 @@
 <script src="../bootstarp/js/bootstrap.bundle.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/myScripts.js"></script>
+<script src="../js/script.js"></script>
 <script>
     $("#update").hide();
     $("#cancel").hide();
