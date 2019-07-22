@@ -150,7 +150,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
+                        <tr onclick="displayRow(this)">
                             <td>I001</td>
                             <td>Lux</td>
                             <td>1000</td>
